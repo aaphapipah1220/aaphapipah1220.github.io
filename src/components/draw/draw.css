@@ -1,52 +1,62 @@
+#draw {
+  /* background: var(--color-bg-variant); */
+  background: var(--color-bg);
+  padding-top: 2.5rem;
+}
+
+section#draw {
+  margin-top: 0;
+}
+
 .container.draw__container {
-    width: 40%;
-    padding-bottom: 4rem;
+  width: 40%;
+  padding-bottom: 4rem;
 }
 
 .draw__avatar {
-    width: 100%;
-    aspect-ratio: 1/1;
-    margin: 0 auto 1rem;
-    border: 0.1rem solid;
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin: 0 auto 1rem;
+  border: 0.1rem solid;
 }
 
 .draw {
-    background: var(--color-light-dark);
-    text-align: center;
-    padding: 2rem;
-    border-radius: 2rem;
-    user-select: none;
+  background: var(--color-bg);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  user-select: none;
 }
 
 .text {
-    color: rgb(97, 114, 151);
-    font-weight: 300;
-    display: block;
-    width: 80%;
-    margin: 0.8rem auto 0;
+  color: var(--color-white);
+  font-weight: 300;
+  display: block;
+  width: 80%;
+  margin: 0.8rem auto 0;
 }
 
 .writer {
-    color: rgb(97, 114, 151);
-    font-weight: lighter;
-    display: block;
-    width: 80%;
-    margin: 0.3rem auto 0;
+  color: var(--color-white);
+  font-weight: lighter;
+  display: block;
+  width: 80%;
+  margin: 0.3rem auto 0;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
-    background: var(--color-primary);
+  background: var(--color-primary);
 }
 
 /* ------ medium device ------ */
 
 @media screen and (max-width: 1024px) {
-    .container.draw__container {
-        width: 60%;
-    }
+  .container.draw__container {
+    width: 60%;
+  }
 }
 
 /* ------ small device ------ */
 
-@media screen and (max-width: 600px) {   
+@media screen and (max-width: 600px) {
 }

@@ -1,67 +1,77 @@
+#services {
+  height: 100vh;
+  padding-top: 2.5rem;
+}
+
+section#services {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .service__container {
-    display: grid;
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .service {
-    background: var(--color-dark);
-    border-radius: 0 0 2rem 2rem;
-    border:  1px solid var(--color-primary);
-    height: fit-content;
-    transition: var(--transition);
-    margin: auto;
+  background: var(--color-dark);
+  border-radius: 0 0 2rem 2rem;
+  border: 1px solid var(--color-primary);
+  height: fit-content;
+  transition: var(--transition);
+  margin: auto;
 }
 
 .service:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default; 
+  background: var(--color-bg);
+  border-color: var(--color-primary-variant);
+  cursor: default;
 }
 
 .service__head {
-    background: var(--color-primary);
-    padding: 2rem;
-    border-radius: 0 0 2rem 2rem;
-    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  background: var(--color-primary);
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .service__head h3 {
-    color:  var(--color-bg);
-    font-size: 1rem;
-    text-align: center;
+  color: var(--color-bg);
+  font-size: 1rem;
+  text-align: center;
 }
 
 .service__list {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .service__list li {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 0.8rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .service__list-icon {
-    color: var(--color-primary);
-    margin-top: 2px;
+  color: var(--color-primary);
+  margin-top: 2px;
 }
 
 .service__list p {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 /* ------ medium device ------ */
 
 @media screen and (max-width: 1024px) {
-    .service {
-        height: auto;
-    }
+  .service {
+    height: auto;
+  }
 }
 
 /* ------ small device ------ */
 
 @media screen and (max-width: 600px) {
-    .service {
-        height: auto;
-    }
+  .service {
+    height: auto;
+  }
 }
